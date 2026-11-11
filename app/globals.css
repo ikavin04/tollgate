@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  --background: #060b16;
+  --foreground: #e5edf8;
+  --surface-1: #0b1324;
+  --surface-2: #111c33;
+  --border-subtle: #1d2d4e;
+  --accent-blue: #3b82f6;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html,
+body {
+  background-color: #060b16;
+  color: #e5edf8;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+}
+
+.tg-grid-bg {
+  background-image:
+    radial-gradient(circle at 20% 0%, rgba(59, 130, 246, 0.10), transparent 40%),
+    radial-gradient(circle at 80% 10%, rgba(16, 185, 129, 0.06), transparent 35%),
+    linear-gradient(to right, rgba(30, 45, 74, 0.22) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 45, 74, 0.22) 1px, transparent 1px);
+  background-size: auto, auto, 48px 48px, 48px 48px;
+}
